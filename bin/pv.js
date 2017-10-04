@@ -4,7 +4,7 @@ var PV = require('../index')
 var bytes = require('bytes')
 var argv = require('minimist')(process.argv.slice(2), {alias: {
   'size': 's',
-  'name': 'N',
+  'name': 'N'
 }})
 
 var pv = PV({
@@ -14,7 +14,7 @@ var pv = PV({
 })
 
 pv.on('info', function (info) {
-  var name = info.name ? info.name + ': ': ''
+  var name = info.name ? info.name + ': ' : ''
   var percentage = info.percentage + '%'
   var speed = info.speed + '/s'
   var transferred = info.transferred + ' Transferred'
