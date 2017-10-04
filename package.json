@@ -26,6 +26,7 @@
   "homepage": "https://github.com/roccomuso/pv#readme",
   "dependencies": {
     "bytes": "^3.0.0",
+    "minimist": "^1.2.0",
     "progress-stream": "^2.0.0"
   }
 }
