@@ -1,12 +1,6 @@
 var bytes = require('bytes')
 var progress = require('progress-stream')
 
-/*
-Options:
- - size: length of the stream
- - time: print speed updated every tot ms (default: 100ms)
-*/
-
 module.exports = function (opts) {
   opts = opts || {}
   var str = progress({
