@@ -1,7 +1,6 @@
 # pv
 
 [![NPM Version](https://img.shields.io/npm/v/pv.svg)](https://www.npmjs.com/package/pv)
-![node](https://img.shields.io/node/v/pv.svg)
 [![Dependency Status](https://david-dm.org/roccomuso/pv.png)](https://david-dm.org/roccomuso/pv)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 <span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
