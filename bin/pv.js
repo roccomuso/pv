@@ -4,8 +4,14 @@ var PV = require('../index')
 var bytes = require('bytes')
 var argv = require('minimist')(process.argv.slice(2), {alias: {
   'size': 's',
-  'name': 'N'
+  'name': 'N',
+  'version': 'v'
 }})
+
+if (argv.v) {
+  console.log('v' + require('../package.json').version)
+  process.exit(0)
+}
 
 var pv = PV({
   name: argv.name,
