@@ -32,15 +32,21 @@ Stats are updated every second.
 ## Programmatic usage
 
 ```javascript
-var PV = require('pv');
-var pv = PV({
+const PV = require('pv')
+const readline = require('readline')
+
+const pv = PV({
   size: /* ... */,
   name: /* ... */,
   time: /* Sets how often progress events are emitted in ms. If omitted then the default is to do so every time a chunk is received. */
 })
 
-pv.on('info', function(str){
-  process.stderr.write(JSON.stringify(str))
+pv.on('info', function(info){
+  readline.clearLine(process.stderr, 0)
+  readline.cursorTo(process.stderr, 0, null)
+  let {speed, transferred} = info
+  process.stderr.write(`Speed: ${speed} - Processed: ${transferred}`)
+  
   /*
   {
     name: 'test',
