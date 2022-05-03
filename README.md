@@ -28,6 +28,7 @@ Stats are updated every second.
 
 - `-s, --size <size>`: Assume the total amount of data to be transferred is SIZE. You can provide a size in bytes or using units (`b, kb, mb, gb, tb`).
 - `-N, --name <name>`: Prefix the output information with NAME.
+- `-f, --format`: Format the ETA as days, hours, minutes, and seconds.  E.g. `6d 5h 43m 21s` or `3m 21s` instead of the default, which is `539001` or `201`.
 
 ## Programmatic usage
 
