@@ -3,12 +3,13 @@
   "version": "1.0.1",
   "description": "Pipe viewer in Node.js",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "pv": "bin/pv.js"
-  },
+  "bin": "bin/pv.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roccomuso/pv.git"
@@ -31,5 +32,6 @@
     "bytes": "^3.0.0",
     "minimist": "^1.2.0",
     "progress-stream": "^2.0.0"
-  }
+  },
+  "packageManager": "yarn@4.17.1"
 }

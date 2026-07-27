@@ -1,7 +1,6 @@
 # pv
 
 [![NPM Version](https://img.shields.io/npm/v/pv.svg)](https://www.npmjs.com/package/pv)
-[![Dependency Status](https://david-dm.org/roccomuso/pv.png)](https://david-dm.org/roccomuso/pv)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 <span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 
@@ -9,6 +8,7 @@ Unix Pipe Viewer (pv) utility in Node.js
 
 > Pipe viewer is a terminal-based tool for monitoring the progress of data through a pipeline. It can be inserted into any normal pipeline between two processes to give a visual indication of how quickly data is passing through, how long it has taken, how near to completion it is, and an estimate of how long it will be until completion.
 
+Requires Node.js >= 18.
 
 ## Install
 
@@ -60,6 +60,12 @@ pv.on('info', function(info){
 
 process.stdin.pipe(pv).pipe(process.stdout)
 ```
+
+## Development
+
+Dependencies are managed with [Yarn](https://yarnpkg.com):
+
+    $ yarn install
 
 ## Author
 
