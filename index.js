@@ -1,14 +1,13 @@
-var bytes = require('bytes')
-var progress = require('progress-stream')
+const bytes = require('bytes')
+const progress = require('progress-stream')
 
-module.exports = function (opts) {
-  opts = opts || {}
-  var str = progress({
+module.exports = (opts = {}) => {
+  const str = progress({
     length: opts.size,
     time: opts.time || 100 // ms
   })
 
-  str.on('progress', function (progress) {
+  str.on('progress', (progress) => {
 /*
 {
   percentage: 9.05,
